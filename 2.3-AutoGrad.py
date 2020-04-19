@@ -62,3 +62,58 @@ print(x.grad)
 #         [5.5000, 5.5000]])
 
 
+# example
+x = torch.tensor([1.0, 2.0, 3.0, 4.0], requires_grad=True)
+y = 2 * x
+z = y.view(2, 2)
+print(z)
+# tensor([[2., 4.],
+#         [6., 8.]], grad_fn=<ViewBackward>)
+
+# 现在 z 不是一个标量
+# 所以在调用 backward 时需要传入一个和 z 同形的权重向量进行加权求和得到一个标量
+v = torch.tensor([[1.0, 0.1], [0.01, 0.001]], dtype=torch.float)
+z.backward(v)
+print(x.grad)   # x.grad 是和 x 同形的张量
+# tensor([2.0000, 0.2000, 0.0200, 0.0020])
+
+
+# 中断梯度追踪
+x = torch.tensor(1.0, requires_grad=True)
+y1 = x ** 2
+with torch.no_grad():
+    y2 = x ** 3
+y3 = y1 + y2
+print(x.requires_grad)          # True
+print(y1, y1.requires_grad)
+# tensor(1., grad_fn=<PowBackward0>) True
+print(y2, y2.requires_grad)
+# tensor(1.) False
+# y2.requires_grad=False 所以不能调用 y2.backward() 会报错
+print(y3, y3.requires_grad)
+# tensor(2., grad_fn=<AddBackward0>) True
+
+y3.backward()
+print(x.grad)
+# tensor(2.)
+
+# y2.backward()
+# RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+
+
+# 如果我们想要修改 tensor 的数值 但是又不希望被 autograd 记录(即不会影响反向传播)
+# 那么可以对 tensor.data 进行操作
+x = torch.ones(1, requires_grad=True)
+print(x.data)                   # 还是一个tensor
+# tensor([1.])
+print(x.data.requires_grad)     # 但是已经是独立于计算图之外
+# False
+
+y = 2 * x
+x.data *= 100                   # 只改变了值，不会记录在计算图，所以不会影响梯度传播
+
+y.backward()
+print(x)
+# tensor([100.], requires_grad=True)
+print(x.grad)
+# tensor([2.])
