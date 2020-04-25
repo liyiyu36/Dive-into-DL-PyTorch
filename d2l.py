@@ -6,6 +6,7 @@ import sys
 import tarfile
 import time
 import zipfile
+import torch
 
 from IPython import display
 from matplotlib import pyplot as plt
@@ -835,3 +836,12 @@ class VOCSegDataset(gdata.Dataset):
 
     def __len__(self):
         return len(self.data)
+
+
+# 对 x 的形状转换的功能定义一个 FlattenLayer 方便以后使用
+class FlattenLayer(torch.nn.Module):
+    def __init__(self):
+        super(FlattenLayer, self).__init__()
+
+    def forward(self, x):   # x shape: (batch, *, *, ...)
+        return x.view(x.shape[0], -1)

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52890458-6c0f-444d-815f-31e381127e0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/3.10-MLPPytorch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.8-MultilayerPerceptron.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.9-MLPScratch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/msi_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/msi_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3.11-UnderfitOverfit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.10-MLPPytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.10-MLPPytorch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d2l.py" beforeDir="false" afterPath="$PROJECT_DIR$/d2l.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,21 +36,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Python.3.9-MLPScratch">
-    <configuration name="3.5-FashionMNIST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.3.10-MLPPytorch">
+    <configuration name="3.10-MLPPytorch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Dive-into-DL-PyTorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3.5-FashionMNIST.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3.10-MLPPytorch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -64,6 +60,9 @@
       <module name="Dive-into-DL-PyTorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -83,6 +82,9 @@
       <module name="Dive-into-DL-PyTorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -102,6 +104,9 @@
       <module name="Dive-into-DL-PyTorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -121,6 +126,9 @@
       <module name="Dive-into-DL-PyTorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -159,19 +167,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.3.5-FashionMNIST" />
       <item itemvalue="Python.3.6-SoftmaxRegressionScratch" />
       <item itemvalue="Python.3.7-SoftmaxRegressionPytorch" />
       <item itemvalue="Python.3.8-MultilayerPerceptron" />
       <item itemvalue="Python.3.9-MLPScratch" />
+      <item itemvalue="Python.3.10-MLPPytorch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.3.10-MLPPytorch" />
         <item itemvalue="Python.3.9-MLPScratch" />
         <item itemvalue="Python.3.8-MultilayerPerceptron" />
         <item itemvalue="Python.3.7-SoftmaxRegressionPytorch" />
         <item itemvalue="Python.3.6-SoftmaxRegressionScratch" />
-        <item itemvalue="Python.3.5-FashionMNIST" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +201,8 @@
       <workItem from="1587478453723" duration="7620000" />
       <workItem from="1587547684862" duration="7440000" />
       <workItem from="1587620270590" duration="12576000" />
-      <workItem from="1587700740105" duration="7241000" />
+      <workItem from="1587700740105" duration="7281000" />
+      <workItem from="1587780618076" duration="3039000" />
     </task>
     <task id="LOCAL-00001" summary="20200421 Update">
       <created>1587478922134</created>
@@ -237,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587718035516</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="20200424 Update">
+      <created>1587747447136</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587747447136</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,10 +276,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="449" y="170" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1587478268161" />
-    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1587718033854">
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1587747445574">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587718033854" />
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587747445574" />
     <state width="1492" height="224" key="GridCell.Tab.0.bottom" timestamp="1587145167305">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -280,18 +296,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1492" height="224" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1587145167305" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587718039217">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587747450414">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587718039217" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587747450414" />
     <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1587478216850">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587478216850" />
-    <state x="564" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587718012356">
+    <state x="564" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587747434807">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="564" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1587718012356" />
+    <state x="564" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1587747434807" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1587558583950">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
